@@ -5,17 +5,37 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.header} >
+        <Text style={styles.headertext} >Market</Text>
+      </View>
+      <View style={styles.divider} />
+      
+      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
   },
+  header:{
+    flexDirection:"row",
+    flex:1,
+    marginTop:80,
+    justifyContent:"space-between",
+    paddingHorizontal:30
+  },
+  headertext:{
+    fontSize:40,
+    fontWeight:"bold"
+  },
+  divider:{
+    height:1,
+    backgroundColor:"grey",
+    marginTop:16,
+    
+  }
 });
